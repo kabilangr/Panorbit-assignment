@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Panorbit-assignment/static/css/main.073c9b0a.css",
-    "main.js": "/Panorbit-assignment/static/js/main.85a38d0d.js",
+    "main.js": "/Panorbit-assignment/static/js/main.8c575850.js",
     "static/js/787.86db7e94.chunk.js": "/Panorbit-assignment/static/js/787.86db7e94.chunk.js",
     "index.html": "/Panorbit-assignment/index.html",
     "main.073c9b0a.css.map": "/Panorbit-assignment/static/css/main.073c9b0a.css.map",
-    "main.85a38d0d.js.map": "/Panorbit-assignment/static/js/main.85a38d0d.js.map",
+    "main.8c575850.js.map": "/Panorbit-assignment/static/js/main.8c575850.js.map",
     "787.86db7e94.chunk.js.map": "/Panorbit-assignment/static/js/787.86db7e94.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.85a38d0d.js"
+    "static/js/main.8c575850.js"
   ]
 }
