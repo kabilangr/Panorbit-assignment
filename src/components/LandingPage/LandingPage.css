@@ -1,0 +1,78 @@
+.blue-background {
+    background-color: blue;
+    height: 35vh;
+    position: relative;
+}
+
+.white-background {
+    background-color: white;
+    position: relative;
+}
+
+.landing-background-img {
+    transform: translate(0px,-25%);
+}
+
+.landing-background-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.Select-account-container {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1.5rem;
+    box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.selection-title {
+    margin: 0;
+    padding: 30px;
+    background: #f6f6f6;
+    color: #545454;
+    text-align: center;
+    font-size: large;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    font-weight: 500;
+}
+
+.account-listing {
+    background-color: white;
+    height:400px;
+    overflow:scroll;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+.listing-lines {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-bottom: solid 1px #dbdbdb;
+}
+
+.listing-lines:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+
+.listing-lines img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.listing-lines h2 {
+    align-self: center;
+    text-align: center;
+    font-size: medium;
+    font-weight: 400;
+    margin-left: 20px;
+    color: #666666;
+}
