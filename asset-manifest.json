@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Panorbit-assignment/static/css/main.073c9b0a.css",
-    "main.js": "/Panorbit-assignment/static/js/main.8c575850.js",
+    "main.css": "/Panorbit-assignment/static/css/main.5828b14a.css",
+    "main.js": "/Panorbit-assignment/static/js/main.a59c2a3d.js",
     "static/js/787.86db7e94.chunk.js": "/Panorbit-assignment/static/js/787.86db7e94.chunk.js",
+    "static/media/landing-background.svg": "/Panorbit-assignment/static/media/landing-background.49d4dbea563e8824d54b8308c4bd0f51.svg",
     "index.html": "/Panorbit-assignment/index.html",
-    "main.073c9b0a.css.map": "/Panorbit-assignment/static/css/main.073c9b0a.css.map",
-    "main.8c575850.js.map": "/Panorbit-assignment/static/js/main.8c575850.js.map",
+    "main.5828b14a.css.map": "/Panorbit-assignment/static/css/main.5828b14a.css.map",
+    "main.a59c2a3d.js.map": "/Panorbit-assignment/static/js/main.a59c2a3d.js.map",
     "787.86db7e94.chunk.js.map": "/Panorbit-assignment/static/js/787.86db7e94.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.8c575850.js"
+    "static/css/main.5828b14a.css",
+    "static/js/main.a59c2a3d.js"
   ]
 }
