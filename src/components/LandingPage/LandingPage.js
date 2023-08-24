@@ -25,17 +25,16 @@ export const LandingPage = () => {
 
     //navigate with data
     const userSelected = (userData) => {
-        window.sessionStorage.setItem(USER_DATA,userData)
+        window.sessionStorage.setItem(USER_DATA,JSON.stringify(userData))
+        window.sessionStorage.setItem("geo",JSON.stringify(userData.address.geo))
         window.sessionStorage.setItem(IS_USER_LOGGED_IN,true)
-        console.log(userData)
-        console.log(window.sessionStorage.getItem(IS_USER_LOGGED_IN))
-        navigate("/home")
+        navigate(0)
     }
 
-  return (
+return (
     <div>
         <div className="landing-background-img"> {/* Landing page background image  */}
-            <img src={ImageUtils.LandingBackground} />
+            <img src={ImageUtils.LandingBackground} alt='im'/>
         </div>
 
         <div className='Select-account-container'> {/*users account list card  */}

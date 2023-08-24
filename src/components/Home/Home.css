@@ -1,0 +1,201 @@
+.nav-profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-div {
+    width: 100%;
+}
+
+.title-div {
+    display: flex;
+    padding: 30px 0 0 0;
+    border-bottom: solid 1px #bdbdbd;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.home-popup {
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    right: 20px;
+    top: 80px;
+    width: 300px;
+    box-shadow: 0px 0px 30px 0px rgba(58, 58, 58, 0.205);
+    border-radius: 1.5rem;
+}
+
+.user-email {
+    font-size: medium;
+    font-weight: 400;
+    color: #bdbdbd;
+    margin-top: 0;
+}
+
+.home-profile-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-profile-user h1 {
+    color: #666666;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.screen-popup {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-profile-user h2{
+    color: #bdbdbd;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-list-data {
+    border-top: solid 1px #bdbdbd8a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.user-list-data:hover {
+    background-color: #d1d1d177;
+}
+
+.profile-user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.user-list-data h1 {
+    color: #666666;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.signout-btn {
+    all: unset;
+    background-color: #d55151;
+    color: #fff;
+    border-radius: 1.5rem;
+    font-size: large;
+    font-weight: 500;
+    padding:5px 10px;
+    margin-left: 50%;
+    transform: translateX(-75%);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.title-div h2 {
+    padding: 0;
+    font-size: larger;
+    color: #666666;
+    font-weight: 500;
+}
+
+.user-data-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    z-index: 2;
+}
+
+.user-data-container:hover {
+    background-color: #d1d1d1;
+    color: black;
+    border-radius: 0.5rem;
+}
+
+.user-data-container img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0 5px;
+}
+
+.user-data-container h1 {
+    margin:0;
+    padding: 0 10px 0 5px;
+    font-size: medium;
+    color: #666666;
+    font-weight: 400;
+}
+
+.chats {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 4;
+}
+.chat-icon {
+    background-color: #2c65c8;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.chat-icon img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+.chat-icon > h1 {
+color: white;
+margin: 0;
+font-size: large;
+font-weight: 400;
+padding-right: 100px;
+cursor: pointer;
+}
+
+.chat-list {
+    background-color: white;
+    max-height: 300px;
+}
+.user-chat-list {
+    display: flex;
+    align-self: center;
+}
+.user-chat-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.user-chat-list h1 {
+    font-size: large;
+    font-weight: 400;
+}

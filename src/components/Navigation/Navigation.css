@@ -1,0 +1,44 @@
+
+.nav-list {
+    list-style: none;
+    text-decoration: none;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.377);
+    padding: 10px 0 10px 0;
+    width: 150px;
+}
+
+.nav-list-last {
+    border-bottom: 0;
+}
+
+.navigation-div > nav {
+    background: linear-gradient(#375cc8, #8F2CC8);;
+    width:15vw;
+    height:90vh;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.navigation-div {
+    padding: 30px;
+    width: 240px;
+    margin-right: 0;
+}
+
+.nav-ul-list {
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #e7e7e75e;
+    font-size: large;
+    font-weight: 400;
+}
