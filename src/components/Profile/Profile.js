@@ -17,7 +17,7 @@ const Profile = (props) => {
     },[])
 
     const { isLoaded } = useLoadScript({
-        googleMapsApiKey: "AIzaSyAlXy_Zc1RP3lO85sXZjHGI5LcjK9nKyiE",
+        googleMapsApiKey: process.env.GOOGLE_MAP_API,
         libraries: ["places"]
     })
 
