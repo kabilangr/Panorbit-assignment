@@ -41,4 +41,9 @@
     color: #e7e7e75e;
     font-size: large;
     font-weight: 400;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: #e7e7e7b6;
 }

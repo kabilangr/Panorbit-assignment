@@ -10,6 +10,8 @@ export const Home = () => {
   const [popUp, setPopUp] = useState(false)
   const [userListing, setUserListing] = useState([])
   const [showChat,setShowChat] = useState(false)
+  const [userChatData,setUserChatData] = useState(null)
+  const [showChatText,setShowChatText] = useState(true)
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -24,7 +26,7 @@ export const Home = () => {
   const logout = () => {
     window.sessionStorage.removeItem(IS_USER_LOGGED_IN)
     navigate(0)
-  }
+  } // logout and navigation
 
   const userChange = (userData) => {
     window.sessionStorage.setItem(USER_DATA,JSON.stringify(userData))
@@ -37,14 +39,29 @@ export const Home = () => {
     fetch(userListingURL)
     .then((response) => response.json())
     .then((list) => {
-        setUserListing(list.users)
+      setUserListing(list.users)
     })
-}
+  }
+
+  const chatSelected = (data) => {
+    setUserChatData({...data,messages: [
+      {name: data.name,chat:"loram ipsamloram ipsamloram ipsam"},
+      {name: userData.name,chat: "loram ipsamloram ipsamloram ipsamloram ipsamloram ipsamloram ipsam"},
+      {name: userData.name,chat: "loram ipsamloram ipsamloram ipsamloram ipsamloram ipsamloram ipsam"},
+      {name: data.name,chat:"loram ipsamloram ipsamloram ipsam"},
+      {name: data.name,chat:"loram ipsamloram ipsamloram ipsam"},
+      {name: data.name,chat:"loram ipsamloram ipsamloram ipsam"},
+    ]})
+  } // hardcoded data for chat
+
+  const closeChat = () => {
+    setUserChatData(null)
+  }
 
   return (
     <div>
       <div className='nav-profile'>
-        <Navigation className="navigation-comp" />
+        <Navigation className="navigation-comp" /> {/* navigation */}
         <div className='content-div'>
           <div className='title-div'>
             <h2>{"Profile"}</h2>
@@ -67,7 +84,7 @@ export const Home = () => {
                     </div>
                   )}
                 </div>
-                <button className='signout-btn' onClick={() => logout()} > Sign out</button>
+                <button className='signout-btn' onClick={() => logout()} >Sign out</button>
               </div>
             </div>
           </div>
@@ -80,17 +97,36 @@ export const Home = () => {
         <div className='chat-icon' onClick={(e) => setShowChat(pre => !pre)}>
           <img src={ImageUtils.ChatIcon} alt='chat' />
           <h1>chats</h1>
-          <img src={ImageUtils.DownArrow} alt='down' />
+          <img className='down-icon' src={ImageUtils.DownArrow} style={{transform: showChat?"none" :"rotate(180deg)"}} alt='down' />
         </div>
         <div className='chat-list' style={{display: showChat? "block": "none"}}>
         { userListing && userListing.map(value => 
-          <div className='user-chat-list' onClick={(e) => {}}>
+          <div className='user-chat-list' onClick={(e) => chatSelected(value)}>
             <img src={value.profilepicture} className='user-chat-img' alt='user'/>
             <h1>{value.name}</h1>
+            <div className='user-online' style={{backgroundColor: value.id % 2 == 0 ? "grey" : "green"  }}></div>
           </div>
         )}
         </div>
       </div>
+      { userChatData && <div className='user-chat'>
+        <div className='user-chat-title'  onClick={(e) => setShowChatText(prev=> !prev)}>
+          <img className='chat-icon-svg' src={userChatData.profilepicture} alt='chat' />
+          <h1>{userChatData.name}</h1>
+          <img className='down-chat-icon' src={ImageUtils.DownArrow} style={{transform: showChatText?"none" :"rotate(180deg)"}} alt='down' />
+          <img className='cross-icon' src={ImageUtils.CrossIcon} onClick={(e) => closeChat() } alt='cross' />
+        </div>
+        <div className='individual-chat' style={showChatText? {display:"block"}: {display:"none"}}>
+          {userChatData && userChatData.messages.map((value) => 
+          <div className='individual-chat-data'>
+            <h2 style={value.name == userData.name? {marginLeft: "100px"}:{}}>{value.chat}</h2>
+          </div>)}
+        </div>
+        <div style={{display:showChatText?"flex":"none"}} className='chat-text-input'>
+          <input className='user-text-input' />
+          <img src={ImageUtils.SendIcon} className='send-icon' alt='send' />
+        </div>
+      </div>}
     </div>
   )
 }

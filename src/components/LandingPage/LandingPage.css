@@ -56,6 +56,7 @@
     margin-left: 30px;
     margin-right: 30px;
     border-bottom: solid 1px #dbdbdb;
+    transition: 0.5s;
 }
 
 .listing-lines:hover {

@@ -17,9 +17,9 @@ const Profile = (props) => {
     },[])
 
     const { isLoaded } = useLoadScript({
-        googleMapsApiKey: process.env.GOOGLE_MAP_API,
+        googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
         libraries: ["places"]
-    })
+    }) // google maps api & LoadScript
 
 return (
     <div className='profile-container'>
