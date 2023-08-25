@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Navigation } from '../Navigation/Navigation'
 import './Home.css'
-import { IS_USER_LOGGED_IN, USER_DATA, userListingURL } from '../../utils/Constant'
+import { Chats, IS_USER_LOGGED_IN, USER_DATA, userListingURL } from '../../utils/Constant'
 import { Outlet , useNavigate } from 'react-router-dom'
 import  ImageUtils  from '../../utils/ImageUtils'
 
@@ -96,7 +96,7 @@ export const Home = () => {
       <div className='chats'>
         <div className='chat-icon' onClick={(e) => setShowChat(pre => !pre)}>
           <img src={ImageUtils.ChatIcon} alt='chat' />
-          <h1>chats</h1>
+          <h1>{Chats}</h1>
           <img className='down-icon' src={ImageUtils.DownArrow} style={{transform: showChat?"none" :"rotate(180deg)"}} alt='down' />
         </div>
         <div className='chat-list' style={{display: showChat? "block": "none"}}>

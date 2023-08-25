@@ -13,3 +13,5 @@ export const PROFILE = "PROFILE"
 export const POSTS = "POSTS"
 export const GALLERY = "GALLERY"
 export const TODO = "TODO"
+
+export const Chats = "Chats"
