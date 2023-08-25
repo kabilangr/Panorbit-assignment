@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/Panorbit-assignment/static/css/main.fb38972e.css",
-    "main.js": "/Panorbit-assignment/static/js/main.0d21907d.js",
+    "main.css": "/Panorbit-assignment/static/css/main.7f7bd98c.css",
+    "main.js": "/Panorbit-assignment/static/js/main.378b38ac.js",
     "static/js/787.86db7e94.chunk.js": "/Panorbit-assignment/static/js/787.86db7e94.chunk.js",
     "static/media/landing-background.svg": "/Panorbit-assignment/static/media/landing-background.49d4dbea563e8824d54b8308c4bd0f51.svg",
     "static/media/chat-icon.svg": "/Panorbit-assignment/static/media/chat-icon.3859b55375bd55df55d76060ae1ac696.svg",
+    "static/media/send-icon.svg": "/Panorbit-assignment/static/media/send-icon.24725b5dc1d0e0b23c985eb089e66b37.svg",
     "index.html": "/Panorbit-assignment/index.html",
+    "static/media/cross-icon.svg": "/Panorbit-assignment/static/media/cross-icon.01246fce825479c3f6efce74a37caa29.svg",
     "static/media/down-arrow.svg": "/Panorbit-assignment/static/media/down-arrow.1d626d94c5cf58aaad20ca074a807d82.svg",
-    "main.fb38972e.css.map": "/Panorbit-assignment/static/css/main.fb38972e.css.map",
-    "main.0d21907d.js.map": "/Panorbit-assignment/static/js/main.0d21907d.js.map",
+    "main.7f7bd98c.css.map": "/Panorbit-assignment/static/css/main.7f7bd98c.css.map",
+    "main.378b38ac.js.map": "/Panorbit-assignment/static/js/main.378b38ac.js.map",
     "787.86db7e94.chunk.js.map": "/Panorbit-assignment/static/js/787.86db7e94.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb38972e.css",
-    "static/js/main.0d21907d.js"
+    "static/css/main.7f7bd98c.css",
+    "static/js/main.378b38ac.js"
   ]
 }
